@@ -19,7 +19,9 @@
         </a>
         <nav class="nav-links-container">
             <p><a href="index.php"><i class="far fa-home"></i> Accueil</a></p>
-            <p><a href="index.php?action=gameAddView"><i class="far fa-newspaper"></i> Ajouter un jeux</a></p>
+            <p><a href="index.php?action=gameAddView"><i class="fas fa-gamepad"></i> Ajouter un jeux</a></p>
+            <p><a href="index.php?action=playerAddView"><i class="fas fa-user-plus"></i> Ajouter un joueur</a></p>
+            <p><a href="index.php?action=contestAddView"><i class="fas fa-swords-laser"></i> Ajouter un Match</a></p>
         </nav>
     </header>
     <main class="wrapper">

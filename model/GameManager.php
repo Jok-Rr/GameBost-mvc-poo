@@ -15,4 +15,21 @@ class GameManager extends Manager
         return $gameAddReturn;
     }
 
+    public function gameList()
+    {
+        $db = $this->dbConnect();
+        $gameList = $db->query('SELECT * FROM game');
+
+        return $gameList;
+    }
+
+    public function gameMinMaxPlayer($id)
+    {
+        $db = $this->dbConnect();
+        $gameMinMaxPlayer = $db->prepare('SELECT * FROM game where id = ' . $id);
+        $gameMinMaxPlayer->execute();
+        $result = $gameMinMaxPlayer->fetchAll();
+
+        return $result;
+    }
 }
